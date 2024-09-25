@@ -8,10 +8,26 @@
         #container {
             display: grid;
             grid-template-columns: auto;
-            width: 180px;
+            width: 300px;
             border: 1px solid lightgray;
-            padding: 5px;
+            padding: 10px;
             margin: 10px;
+            background-color: lightblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #container > h1 {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            text-align: left;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+        input[type=submit]:hover {
+            background-color: cornflowerblue;
         }
     </style>
 
@@ -19,36 +35,36 @@
 </head>
 <body>
     <div id = "container">
-        <h1>Form</h1>
+        <h1>Submit Your Recipe</h1>
         <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="GET">
             <div>
                 <label for="Recipe_name">Recipe Name:</label><br>
-                <input type="text" id="Recipe_name" name="Recipe_name"><br>
+                <input type="text" id="Recipe_name" name="Recipe_name"><br><br>
             </div>
             
             <div>
                 <label for="Recipe_desc">Recipe Description:</label><br>
-                <textarea name="Recipe_desc">Recipe description here </textarea><br>
+                <textarea name="Recipe_desc">Recipe description here </textarea><br><br>
             </div>
             
             <div>
                 <label for="Prep_time">Preparation Time (in minutes):</label><br>
-                <input type="number" id="Prep_time" name="Prep_time"><br>
+                <input type="number" id="Prep_time" name="Prep_time"><br><br>
             </div>
             
             <div>
                 <label for="List_ing">List of Ingredients:</label><br>
-                <input type="text" id="List_ing" name="List_ing"><br>
+                <input type="text" id="List_ing" name="List_ing"><br><br>
             </div>
             
             <div>
                 <label for="Cooking_instr">Cooking Instructions:</label><br>
-                <input type="text" id="Cooking_instr" name="Cooking_instr"><br>    
+                <input type="text" id="Cooking_instr" name="Cooking_instr"><br><br>  
             </div>
             
             <div>
                 <label for="image">Upload Image of Recipe:</label><br>
-                <input type="file" id="image" name="image"><br>
+                <input type="file" id="image" name="image"><br><br>
             </div>
             
             <div>
