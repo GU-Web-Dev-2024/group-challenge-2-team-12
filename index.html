@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: auto;
+            width: 180px;
+            border: 1px solid lightgray;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+
     <title>Recipe Submission Form</title>
 </head>
 <body>
     <div id = "container">
-
         <h1>Form</h1>
         <form action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html" method="GET">
-            <label for="Recipe_name">Recipe name:</label>
-            <input type="text" id="Recipe_name" name="Recipe_name"><br><br>
+            <div>
+                <label for="Recipe_name">Recipe Name:</label><br>
+                <input type="text" id="Recipe_name" name="Recipe_name"><br>
+            </div>
             
-            <p>Recipe description: </p>
-            <textarea name="Recipe_desc">Recipe description here </textarea><br><br>
+            <div>
+                <label for="Recipe_desc">Recipe Description:</label><br>
+                <textarea name="Recipe_desc">Recipe description here </textarea><br>
+            </div>
             
-            <label for="Prep_time">Preparation time:</label>
-            <input type="number" id="Prep_time" name="Prep_time"><br><br>
+            <div>
+                <label for="Prep_time">Preparation Time (in minutes):</label><br>
+                <input type="number" id="Prep_time" name="Prep_time"><br>
+            </div>
             
-            <label for="List_ing">List of ingredients:</label>
-            <input type="text" id="List_ing" name="List_ing"><br><br>
+            <div>
+                <label for="List_ing">List of Ingredients:</label><br>
+                <input type="text" id="List_ing" name="List_ing"><br>
+            </div>
+            
+            <div>
+                <label for="Cooking_instr">Cooking Instructions:</label><br>
+                <input type="text" id="Cooking_instr" name="Cooking_instr"><br>    
+            </div>
+            
+            <div>
+                <label for="image">Upload Image of Recipe:</label><br>
+                <input type="file" id="image" name="image"><br>
+            </div>
+            
+            <div>
+                <input type="submit" value="Submit">
+            </div>
 
-            <label for="Cooking_instr">Cooking instructions:</label>
-            <input type="text" id="Cooking_instr" name="Cooking_instr"><br><br>
-
-            <label for="image">Image of the recipe:</label>
-            <input type="file" id="image" name="image"><br><br>
-
-            <input type="submit" value="Submit">
         </form>
     </div>
 </body>
